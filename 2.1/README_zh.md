@@ -251,7 +251,7 @@ Each `ExteriorRing` and `InteriorRing` MUST consist of the following sequence:
                |  |  | === 相对地 MoveTo(-2, -5) == 创建点 (3,2)
                |  |  `> 解码: ((34 >> 1) ^ (-(34 & 1))) = +7
                |  `> 解码: ((50 >> 1) ^ (-(50 & 1))) = +5
-               | ===== relative MoveTo(+5, +7) == 创建点 (5,7)
+               | ===== 相对地 MoveTo(+5, +7) == 创建点 (5,7)
                `> [00010 001] = command id 1 (MoveTo), command count 2
 ```
 
