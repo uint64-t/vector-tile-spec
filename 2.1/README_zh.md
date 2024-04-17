@@ -119,7 +119,7 @@ count = CommandInteger >> 3
 ParameterInteger = (value << 1) ^ (value >> 31)
 ```
 
-参数值不支持大于`pow(2,31) - 1`或`-1 * (pow(2,31) - 1)`的数值。
+参数值不支持大于`pow(2,31) - 1`或`-1 * (pow(2,31))`的数值。
 
 以下的公式用来将`ParameterInteger`解码为实际值：
 
