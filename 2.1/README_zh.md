@@ -195,7 +195,6 @@ value = ((ParameterInteger >> 1) ^ (-(ParameterInteger & 1)))
 1. 一个`ExteriorRing`
 2. 零个或多个`InteriorRing`
 
-Each `ExteriorRing` and `InteriorRing` MUST consist of the following sequence:
 每个`ExteriorRing`和`InteriorRing`必须包含以下序列：
 
 1. 一个`MoveTo`指令，其command count为1
