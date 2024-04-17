@@ -143,7 +143,7 @@ value = ((ParameterInteger >> 1) ^ (-(ParameterInteger & 1)))
 
 ##### 4.3.3.1. LineTo指令
 
-表示`LineTo`指令执行`n`的`ParameterInteger`**必须**立即接上`n`对`ParameterInteger`。对于`(dX, dY)`参数：
+表示`LineTo`指令执行`n`次的`CommandInteger`**必须**立即接上`n`对`ParameterInteger`。对于`(dX, dY)`参数：
 
 1. 定义一条以游标位置`(cX, cY)`为起点，`(pX, pY)`为终点的线段，其中`pX = cX + dX`和`pY = cY + dY`。
    * 对于线要素，这条线段延长了当前线要素。
@@ -190,7 +190,7 @@ value = ((ParameterInteger >> 1) ^ (-(ParameterInteger & 1)))
 
 ##### 4.3.4.4. Polygon几何类型
 
-`POLYGON`几何类型表示面或多面几何，每个面有且只有一个外环和零个或多个内环。面几何的指令序列包含一个或多个下列序列：
+`POLYGON`几何类型表示面或多面，每个面有且只有一个外环和零个或多个内环。面几何的指令序列包含一个或多个下列序列：
 
 1. 一个`ExteriorRing`
 2. 零个或多个`InteriorRing`
