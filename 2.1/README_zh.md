@@ -133,7 +133,7 @@ value = ((ParameterInteger >> 1) ^ (-(ParameterInteger & 1)))
 
 ##### 4.3.3.1. MoveTo指令
 
-表示`MoveTo`指令执行`n`的`ParameterInteger`**必须**立即接上`n`对`ParameterInteger`。对于`(dX, dY)`参数：
+表示`MoveTo`指令执行`n`次的`CommandInteger`**必须**立即接上`n`对`ParameterInteger`。对于`(dX, dY)`参数：
 
 1. 定义坐标`(pX, pY)`，其中`pX = cX + dX`和`pY = cY + dY`。
    * 对于点要素，这个坐标定义了一个新的点要素。
