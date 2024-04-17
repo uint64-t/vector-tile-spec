@@ -111,7 +111,7 @@ count = CommandInteger >> 3
 
 #### 4.3.2. 参数数
 
-指令的所有参数紧跟在`CommandInteger`之后。跟在`CommandInteger`之后的`ParameterIntegers`个数等于指令所需要参数的个数乘以指令执行的次数。例如，一条指示`MoveTo`指令执行3次的`CommandInteger`之后会跟随6个`ParameterIntegers`。
+指令的所有参数紧跟在`CommandInteger`之后。跟在`CommandInteger`之后的`ParameterIntegers`个数等于指令所需要参数的个数乘以指令执行的次数。例如，一条表示`MoveTo`指令执行3次的`CommandInteger`之后会跟随6个`ParameterIntegers`。
 
 `ParameterInteger`由[zigzag](https://developers.google.com/protocol-buffers/docs/encoding#types)方式编码得到，以使小负数和正数都被编码为小整数。将参数值编码为`ParameterInteger`按以下公式转换：
 
