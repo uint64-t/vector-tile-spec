@@ -201,9 +201,9 @@ value = ((ParameterInteger >> 1) ^ (-(ParameterInteger & 1)))
 2. 一个`LineTo`指令，其command count大于1
 3. 一个`ClosePath`指令
 
-一个外环被**定义**为一个线性的环，当应用[surveyor's formula](https://en.wikipedia.org/wiki/Shoelace_formula)，以多边形的节点在瓦片坐标系下的坐标计算面积时，其面积为正。在瓦片坐标系下（X向右为正，Y向下为正），外环节点以顺时针旋转。
+一个外环被**定义**为一个线性的环，当应用高斯面积公式[surveyor's formula](https://en.wikipedia.org/wiki/Shoelace_formula)时，以多边形的节点在瓦片坐标系下的坐标计算面积时，其面积为正。在瓦片坐标系下（X向右为正，Y向下为正），外环节点以顺时针旋转。
 
-一个内环被**定义**为一个线性的环，当应用[surveyor's formula](https://en.wikipedia.org/wiki/Shoelace_formula)，以多边形的节点在瓦片坐标系下的坐标计算面积时，其面积为负。在瓦片坐标系下（X向右为正，Y向下为正），内环节点以逆时针旋转。
+一个内环被**定义**为一个线性的环，当应用高斯面积公式[surveyor's formula](https://en.wikipedia.org/wiki/Shoelace_formula)时，以多边形的节点在瓦片坐标系下的坐标计算面积时，其面积为负。在瓦片坐标系下（X向右为正，Y向下为正），内环节点以逆时针旋转。
 
 如果`POLYGON`的指令序列只包含一个外环，那么**必须**将其解析为单面；否则，**必须**解析为多面几何，其中每个外环表示一个新面的开始。如果面几何包换内环，那么**必须**将其编码到所属的外环之后。
 
